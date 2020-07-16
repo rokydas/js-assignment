@@ -75,7 +75,7 @@ else {
 }
 
 // This is a function to find out the smallest name from an array. 
-function tinyFriends(friendsArray){
+function tinyFriend(friendsArray){
     if(friendsArray.length == 0) {                          // This is to handle empty string. 
         return [];
     }
@@ -101,7 +101,7 @@ function tinyFriends(friendsArray){
 // Checking tinyFriends function
 let friendsArray = ["Tamim", "Mushfiq", "Mashrafee", "Sakib", "Mahmudullah", ""];
 
-let tinyNames = tinyFriends(friendsArray);
+let tinyNames = tinyFriend(friendsArray);
 if(tinyNames.length == 0){
     console.log("There was no name in that array");        // No name in the array.   
 }
