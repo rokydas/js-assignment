@@ -51,13 +51,13 @@ function brickCalculator(numFloor){
         totalBrick = -1;
     }
     else if(numFloor > 0 && numFloor <= 10){      // This is for  1st to 10th floor. 
-        totalBrick = numFloor * 15;
+        totalBrick = numFloor * 15000;
     }
     else if(numFloor > 10 && numFloor <= 20){     // This is for  11th to 20th floor. 
-        totalBrick = 10 * 15 + (numFloor - 10) * 12;
+        totalBrick = 10 * 15000 + (numFloor - 10) * 12000;
     }
     else if(numFloor > 20){                       // This is for  21th to unlimited floor. 
-        totalBrick = 10 * 15 + 10 * 12 + (numFloor - 20) * 10;
+        totalBrick = 10 * 15000 + 10 * 12000 + (numFloor - 20) * 10000;
     }
     else{                                         // This is to handle negative input. 
         totalBrick = -1;
@@ -66,7 +66,7 @@ function brickCalculator(numFloor){
 }
 
 // Checking brickCalculator function
-let netBrick = brickCalculator(45.5);
+let netBrick = brickCalculator(45);
 if(netBrick == -1) {
     console.log("Invalid Input");
 }
